@@ -7,7 +7,7 @@ const {classes: Cc, interfaces: Ci, utils: Cu} = Components;
 
 Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 Cu.import("resource://gre/modules/Services.jsm");
-const {MozLoopService, LOOP_SESSION_TYPE} = Cu.import("resource:///modules/loop/MozLoopService.jsm", {});
+const {MozLoopService, LOOP_SESSION_TYPE} = Cu.import("resource://monkey-hello/loop/MozLoopService.jsm", {});
 XPCOMUtils.defineLazyModuleGetter(this, "Promise",
                                   "resource://gre/modules/Promise.jsm");
 XPCOMUtils.defineLazyModuleGetter(this, "Task",
@@ -17,7 +17,7 @@ XPCOMUtils.defineLazyGetter(this, "eventEmitter", function() {
   return new EventEmitter();
 });
 XPCOMUtils.defineLazyGetter(this, "gLoopBundle", function() {
-  return Services.strings.createBundle('chrome://browser/locale/loop/loop.properties');
+  return Services.strings.createBundle('chrome://monkey-hello/locale/loop/loop.properties');
 });
 
 this.EXPORTED_SYMBOLS = ["LoopRooms", "roomsPushNotification"];

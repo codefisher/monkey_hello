@@ -14,13 +14,13 @@ this.EXPORTED_SYMBOLS = ["LoopCalls"];
 const EMAIL_OR_PHONE_RE = /^(:?\S+@\S+|\+\d+)$/;
 
 XPCOMUtils.defineLazyModuleGetter(this, "MozLoopService",
-                                  "resource:///modules/loop/MozLoopService.jsm");
+                                  "resource://monkey-hello/loop/MozLoopService.jsm");
 
 XPCOMUtils.defineLazyModuleGetter(this, "LOOP_SESSION_TYPE",
-                                  "resource:///modules/loop/MozLoopService.jsm");
+                                  "resource://monkey-hello/loop/MozLoopService.jsm");
 
 XPCOMUtils.defineLazyModuleGetter(this, "LoopContacts",
-                                  "resource:///modules/loop/LoopContacts.jsm");
+                                  "resource://monkey-hello/loop/LoopContacts.jsm");
 XPCOMUtils.defineLazyModuleGetter(this, "Task",
                                   "resource://gre/modules/Task.jsm");
 

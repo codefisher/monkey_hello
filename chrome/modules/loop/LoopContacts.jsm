@@ -9,13 +9,13 @@ Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 XPCOMUtils.defineLazyModuleGetter(this, "console",
                                   "resource://gre/modules/devtools/Console.jsm");
 XPCOMUtils.defineLazyModuleGetter(this, "LoopStorage",
-                                  "resource:///modules/loop/LoopStorage.jsm");
+                                  "resource://monkey-hello/loop/LoopStorage.jsm");
 XPCOMUtils.defineLazyModuleGetter(this, "Promise",
                                   "resource://gre/modules/Promise.jsm");
 XPCOMUtils.defineLazyModuleGetter(this, "CardDavImporter",
-                                  "resource:///modules/loop/CardDavImporter.jsm");
+                                  "resource://monkey-hello/loop/CardDavImporter.jsm");
 XPCOMUtils.defineLazyModuleGetter(this, "GoogleImporter",
-                                  "resource:///modules/loop/GoogleImporter.jsm");
+                                  "resource://monkey-hello/loop/GoogleImporter.jsm");
 XPCOMUtils.defineLazyGetter(this, "eventEmitter", function() {
   const {EventEmitter} = Cu.import("resource://gre/modules/devtools/event-emitter.js", {});
   return new EventEmitter();

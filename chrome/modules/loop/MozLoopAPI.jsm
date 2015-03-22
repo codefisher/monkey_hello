@@ -9,16 +9,16 @@ const { classes: Cc, interfaces: Ci, utils: Cu } = Components;
 Cu.import("resource://services-common/utils.js");
 Cu.import("resource://gre/modules/Services.jsm");
 Cu.import("resource://gre/modules/XPCOMUtils.jsm");
-Cu.import("resource:///modules/loop/LoopCalls.jsm");
-Cu.import("resource:///modules/loop/MozLoopService.jsm");
-Cu.import("resource:///modules/loop/LoopRooms.jsm");
-Cu.import("resource:///modules/loop/LoopContacts.jsm");
+Cu.import("resource://monkey-hello/loop/LoopCalls.jsm");
+Cu.import("resource://monkey-hello/loop/MozLoopService.jsm");
+Cu.import("resource://monkey-hello/loop/LoopRooms.jsm");
+Cu.import("resource://monkey-hello/loop/LoopContacts.jsm");
 Cu.importGlobalProperties(["Blob"]);
 
 XPCOMUtils.defineLazyModuleGetter(this, "LoopContacts",
-                                        "resource:///modules/loop/LoopContacts.jsm");
+                                        "resource://monkey-hello/loop/LoopContacts.jsm");
 XPCOMUtils.defineLazyModuleGetter(this, "LoopStorage",
-                                        "resource:///modules/loop/LoopStorage.jsm");
+                                        "resource://monkey-hello/loop/LoopStorage.jsm");
 XPCOMUtils.defineLazyModuleGetter(this, "hookWindowCloseForPanelClose",
                                         "resource://gre/modules/MozSocialAPI.jsm");
 XPCOMUtils.defineLazyModuleGetter(this, "PluralForm",

@@ -1,4 +1,4 @@
-content	monkey-hello	chrome/content/
-skin	monkey-hello	classic/1.0	chrome/skin/
-locale	monkey-hello	en-US	chrome/locale/en-US/
-resource	monkey-hello	chrome/modules
+content		monkey-hello	chrome/content/
+resource	monkey-hello	chrome/modules/
+skin		monkey-hello	classic/1.0		chrome/skin/
+locale		monkey-hello	en-US			chrome/locale/en-US/

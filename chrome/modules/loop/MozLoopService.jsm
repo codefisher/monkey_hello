@@ -31,7 +31,7 @@ Cu.importGlobalProperties(["URL"]);
 this.EXPORTED_SYMBOLS = ["MozLoopService", "LOOP_SESSION_TYPE"];
 
 XPCOMUtils.defineLazyModuleGetter(this, "injectLoopAPI",
-  "resource:///modules/loop/MozLoopAPI.jsm");
+  "resource://monkey-hello/loop/MozLoopAPI.jsm");
 
 XPCOMUtils.defineLazyModuleGetter(this, "convertToRTCStatsReport",
   "resource://gre/modules/media/RTCStatsReport.jsm");
@@ -54,22 +54,22 @@ XPCOMUtils.defineLazyModuleGetter(this, "deriveHawkCredentials",
                                   "resource://services-common/hawkrequest.js");
 
 XPCOMUtils.defineLazyModuleGetter(this, "LoopContacts",
-                                  "resource:///modules/loop/LoopContacts.jsm");
+                                  "resource://monkey-hello/loop/LoopContacts.jsm");
 
 XPCOMUtils.defineLazyModuleGetter(this, "LoopStorage",
-                                  "resource:///modules/loop/LoopStorage.jsm");
+                                  "resource://monkey-hello/loop/LoopStorage.jsm");
 
 XPCOMUtils.defineLazyModuleGetter(this, "LoopCalls",
-                                  "resource:///modules/loop/LoopCalls.jsm");
+                                  "resource://monkey-hello/loop/LoopCalls.jsm");
 
 XPCOMUtils.defineLazyModuleGetter(this, "LoopRooms",
-                                  "resource:///modules/loop/LoopRooms.jsm");
+                                  "resource://monkey-hello/loop/LoopRooms.jsm");
 
 XPCOMUtils.defineLazyModuleGetter(this, "roomsPushNotification",
-                                  "resource:///modules/loop/LoopRooms.jsm");
+                                  "resource://monkey-hello/loop/LoopRooms.jsm");
 
 XPCOMUtils.defineLazyModuleGetter(this, "MozLoopPushHandler",
-                                  "resource:///modules/loop/MozLoopPushHandler.jsm");
+                                  "resource://monkey-hello/loop/MozLoopPushHandler.jsm");
 
 XPCOMUtils.defineLazyModuleGetter(this, "UITour",
                                   "resource:///modules/UITour.jsm");
@@ -713,7 +713,7 @@ let MozLoopServiceInternal = {
       return gLocalizedStrings;
 
     let stringBundle =
-      Services.strings.createBundle("chrome://browser/locale/loop/loop.properties");
+      Services.strings.createBundle("chrome://monkey-hello/locale/loop/loop.properties");
 
     let enumerator = stringBundle.getSimpleEnumeration();
     while (enumerator.hasMoreElements()) {
